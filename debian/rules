@@ -5,12 +5,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-# This is the debhelper compatability version to use.
-
 build: build-stamp
 build-stamp:
 	dh_testdir
-	#$(MAKE)
+	$(MAKE)
 	touch build-stamp
 
 clean:
