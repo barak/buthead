@@ -1,6 +1,7 @@
 buthead (1.0-4) unstable; urgency=low
 
   * lengthen and clarify description (closes: #209440)
+  * rev description version
 
  -- Barak A. Pearlmutter <bap@debian.org>  Fri, 12 Sep 2003 17:33:12 +0200
 

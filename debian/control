@@ -2,11 +2,11 @@ Source: buthead
 Section: text
 Priority: extra
 Maintainer: Barak Pearlmutter <bap@cs.unm.edu>
-Standards-Version: 3.5.2
+Standards-Version: 3.6.0
 Build-depends: debhelper
 
 Package: buthead
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: copy all but the first few lines
- Copy all but the first N lines of standard input to standard output.
+ Program to copy all but the first N lines of its input to its output.
