@@ -1,0 +1,9 @@
+buthead (1.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Barak Pearlmutter <bap@cs.unm.edu>  Mon, 25 Jun 2001 18:49:49 -0600
+
+Local variables:
+mode: debian-changelog
+End:
