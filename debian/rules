@@ -22,7 +22,6 @@ clean:
 
 install: build
 	dh_testdir
-	dh_testroot
 	dh_clean -k
 	dh_installdirs
 	$(MAKE) install-strip DESTDIR=`pwd`/debian/tmp prefix=/usr
@@ -34,7 +33,7 @@ binary-arch: build install
 	dh_testroot
 	dh_installdocs
 	dh_installmanpages
-	dh_installchangelogs 
+	dh_installchangelogs
 	dh_compress
 	dh_fixperms
 	dh_installdeb
