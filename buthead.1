@@ -1,7 +1,7 @@
 .TH BUTHEAD 1 "April 1988"
 .UC
 .SH NAME
-buthead \- give all but the first few lines
+buthead \- copies all but the first few lines
 .SH SYNOPSIS
 .B buthead
 count
@@ -10,7 +10,7 @@ count
 5 <file-with-5line-header >file-without-header
 .SH DESCRIPTION
 .I Buthead
-copies all but the the first
+copies all but the first
 .I count
 lines of the standard input to the standard output.
 .SH DIAGNOSTICS
@@ -19,10 +19,13 @@ terminates gracefully if EOF is encountered within the first
 .I count
 lines.
 .SH AUTHOR
-Written by Barak Pearlmutter at Carnegie-Mellon University in April 1988.
+Written by Barak A. Pearlmutter at Carnegie-Mellon University in April 1988.
 .SH BUGS
 The
 .I buttail
-program still needs to be writen.
+program still needs to be written.
+
+Functionality overlaps with
+.I tail +count
 .SH SEE\ ALSO
 head(1), tail(1)
