@@ -1,4 +1,4 @@
--*- Makefile -*-
+# -*- Makefile -*-
 progs=buthead
 clean:
 	-rm -f $(progs)
