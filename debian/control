@@ -1,7 +1,7 @@
 Source: buthead
 Section: text
 Priority: extra
-Maintainer: Barak Pearlmutter <bap@cs.unm.edu>
+Maintainer: Barak Pearlmutter <bap@debian.org>
 Standards-Version: 3.6.0
 Build-depends: debhelper
 
