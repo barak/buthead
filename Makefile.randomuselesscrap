@@ -1,0 +1,19 @@
+clean:
+	-rm -f buthead
+
+prefix=/usr/local
+exec_prefix=$(prefix)
+bindir=$(exec_prefix)/bin
+
+INSTALL = install
+INSTALL_PROGRAM = $(INSTALL) --mode a+rx,ug+w
+
+install:: buthead
+	$(INSTALL_DIR) $(DESTDIR)$(bindir)
+	$(INSTALL_PROGRAM) buthead $(DESTDIR)$(bindir)
+
+uninstall::
+	-cd $(DESTDIR)$(bindir); rm -f buthead
+
+install-strip:
+	$(MAKE) INSTALL_PROGRAM='$(INSTALL_PROGRAM) --strip' install
