@@ -1,8 +1,9 @@
 buthead (1.0-6) unstable; urgency=low
 
   * posix updates for tail xref
+  * lengthen description (closes: #117151, #209440)
 
- --
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 14 Jun 2004 14:35:34 +0100
 
 buthead (1.0-5) unstable; urgency=low
 

@@ -11,5 +11,5 @@ Depends: ${shlibs:Depends}
 Description: copy all but the first few lines
  Program to copy all but
  the first N lines
- of its input
- to its output.
+ of standard input
+ to standard output.
