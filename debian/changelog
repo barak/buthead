@@ -1,3 +1,9 @@
+buthead (1.0-6) unstable; urgency=low
+
+  * posix updates for tail xref
+
+ --
+
 buthead (1.0-5) unstable; urgency=low
 
   * multiline description
