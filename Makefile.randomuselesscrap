@@ -7,6 +7,7 @@ bindir=$(exec_prefix)/bin
 
 INSTALL = install
 INSTALL_PROGRAM = $(INSTALL) --mode a+rx,ug+w
+INSTALL_DIR = mkdir --parent
 
 install:: buthead
 	$(INSTALL_DIR) $(DESTDIR)$(bindir)
