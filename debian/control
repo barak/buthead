@@ -2,7 +2,7 @@ Source: buthead
 Section: text
 Priority: extra
 Maintainer: Barak Pearlmutter <bap@debian.org>
-Standards-Version: 3.6.0
+Standards-Version: 3.6.1
 Build-depends: debhelper
 
 Package: buthead

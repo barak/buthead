@@ -1,3 +1,10 @@
+buthead (1.0-5) unstable; urgency=low
+
+  * multiline description
+  * update maintainer address
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 16 Sep 2003 16:19:02 +0100
+
 buthead (1.0-4) unstable; urgency=low
 
   * lengthen and clarify description (closes: #209440)
