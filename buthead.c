@@ -8,12 +8,16 @@
 // (at your option) any later version.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(argc,argv)
      int argc;
      char **argv;
 {
-  int lines_to_skip, c, i;
+  long lines_to_skip;
+  long i;
+  int c;
+  char *p;
 
   if (argc != 2)
     {
@@ -21,9 +25,12 @@ int main(argc,argv)
       exit(2);
     }
 
-  if (sscanf(argv[1], "%d", &lines_to_skip) != 1 || lines_to_skip < 0)
+  lines_to_skip = strtol(argv[1], &p, 10);
+
+  if (lines_to_skip < 0 || argv[1][0] == '\0' || *p != '\0')
     {
-      fprintf(stderr, "Unable to parse line count %s.\n", argv[1]);
+      fprintf(stderr, "buthead error: invalid line count '%s'.\n",
+	      argv[1]);
       exit(2);
     }
 
@@ -31,7 +38,9 @@ int main(argc,argv)
     {
       if ((c = getc(stdin)) == EOF)
 	{
-	  fprintf(stderr, "Premature EOF.\n");
+	  fprintf(stderr,
+		  "buthead error: EOF on line %ld while skipping %ld.\n",
+		  i+1, lines_to_skip);
 	  exit(1);
 	}
 
