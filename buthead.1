@@ -11,20 +11,15 @@ count
 .I Buthead
 copies all but the first
 .I count
-lines of the standard input to the standard output.
+lines of its standard input to its standard output.
 .SH DIAGNOSTICS
-.I Buthead
-terminates gracefully if EOF is encountered within the first
+Terminates gracefully if EOF encountered within first
 .I count
 lines.
 .SH AUTHOR
 Written by Barak A. Pearlmutter on April 1.
 .SH BUGS
-The
-.I buttail
-program still needs to be written.
-
 Functionality overlaps with
-.I tail -n +count
+.I tail +count
 .SH SEE\ ALSO
 head(1), tail(1)
