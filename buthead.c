@@ -9,14 +9,11 @@
 
 #include <stdio.h>
 
-#define BUFFSIZE 1024
-
 int main(argc,argv)
      int argc;
      char **argv;
 {
   int lines_to_skip, c, i;
-  char buff[BUFFSIZE];
 
   if (argc != 2)
     {
@@ -41,8 +38,8 @@ int main(argc,argv)
       if (c == '\n') i += 1;
     }
 
-  while ((i = fread(buff, 1, BUFFSIZE, stdin)) != 0)
-    fwrite(buff, 1, i, stdout);
+  while ((c = getchar()) != EOF)
+    putchar(c);
 
-  exit(0);
+  return 0;
 }
