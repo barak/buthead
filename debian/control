@@ -3,6 +3,7 @@ Section: text
 Priority: extra
 Maintainer: Barak Pearlmutter <bap@cs.unm.edu>
 Standards-Version: 3.0.1
+Build-depends: debhelper
 
 Package: buthead
 Architecture: any
