@@ -11,7 +11,7 @@
 
 #define BUFFSIZE 1024
 
-main(argc,argv)
+int main(argc,argv)
      int argc;
      char **argv;
 {
@@ -37,8 +37,8 @@ main(argc,argv)
 	  fprintf(stderr, "Premature EOF.\n");
 	  exit(1);
 	}
-      else if (c == '\n') i += 1;
-      else continue;
+
+      if (c == '\n') i += 1;
     }
 
   while ((i = fread(buff, 1, BUFFSIZE, stdin)) != 0)
