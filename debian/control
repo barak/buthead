@@ -2,7 +2,7 @@ Source: buthead
 Section: text
 Priority: extra
 Maintainer: Barak Pearlmutter <bap@cs.unm.edu>
-Standards-Version: 3.0.1
+Standards-Version: 3.5.2
 Build-depends: debhelper
 
 Package: buthead
