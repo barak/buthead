@@ -1,9 +1,3 @@
-/* CVS version control block - do not edit manually
- *  $RCSfile$
- *  $Revision$
- *  $Date$
- *  $Source$ */
-
 // buthead: pass through all but the first n lines of standard input.
 
 // Copyright (C) 2001, Barak A. Pearlmutter <bap@cs.unm.edu>
