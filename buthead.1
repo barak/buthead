@@ -1,0 +1,28 @@
+.TH BUTHEAD 1 "April 1988"
+.UC
+.SH NAME
+buthead \- give all but the first few lines
+.SH SYNOPSIS
+.B buthead
+count
+.SH EXAMPLE
+.B buthead
+5 <file-with-5line-header >file-without-header
+.SH DESCRIPTION
+.I Buthead
+copies all but the the first
+.I count
+lines of the standard input to the standard output.
+.SH DIAGNOSTICS
+.I Buthead
+terminates gracefully if EOF is encountered within the first
+.I count
+lines.
+.SH AUTHOR
+Written by Barak Pearlmutter at Carnegie-Mellon University in April 1988.
+.SH BUGS
+The
+.I buttail
+program still needs to be writen.
+.SH SEE\ ALSO
+head(1), tail(1)
