@@ -1,11 +1,17 @@
-/* Chop off the first n lines.
+/* CVS version control block - do not edit manually
+ *  $RCSfile$
+ *  $Revision$
+ *  $Date$
+ *  $Source$ */
 
- * History:
+// buthead: pass through all but the first n lines of standard input.
 
- * April 24, 1988
- * Created, Barak Pearlmutter.
+// Copyright (C) 2001, Barak A. Pearlmutter <bap@cs.unm.edu>
 
- */
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
 
 #include <stdio.h>
 
