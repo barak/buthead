@@ -25,7 +25,7 @@ install: build
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
-	$(MAKE) install DESTDIR=`pwd`/debian/tmp
+	$(MAKE) install DESTDIR=`pwd`/debian/tmp prefix=/usr
 
 binary-indep: build install
 
