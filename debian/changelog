@@ -1,3 +1,11 @@
+buthead (1.0-2) unstable; urgency=low
+
+  * allow long skip count
+  * robust parsing of count
+  * more informative and evocative error messages
+
+ -- Barak Pearlmutter <bap@cs.unm.edu>  Thu, 12 Jul 2001 21:31:38 -0600
+
 buthead (1.0-1) unstable; urgency=low
 
   * Initial Release.
