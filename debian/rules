@@ -23,7 +23,7 @@ install: build
 	dh_testdir
 	dh_clean -k
 	dh_installdirs
-	$(MAKE) install-strip DESTDIR=`pwd`/debian/tmp prefix=/usr
+	$(MAKE) install-strip DESTDIR=`pwd`/debian/buthead prefix=/usr
 
 binary-indep: build install
 
