@@ -1,17 +1,12 @@
-buthead (1.1-2) unstable; urgency=low
+buthead (1.0-2) unstable; urgency=low
 
   * add build dependency on debhelper (closes: #105643)
-
- -- Barak Pearlmutter <bap@cs.unm.edu>  Wed, 18 Jul 2001 15:23:42 -0600
-
-buthead (1.1-1) unstable; urgency=low
-
-  * new upstream version with minor mods:
+  * minor mods:
   * allow long skip count
   * robust parsing of count
   * more informative and evocative error messages
 
- -- Barak Pearlmutter <bap@cs.unm.edu>  Fri, 13 Jul 2001 02:29:21 -0600
+ -- Barak Pearlmutter <bap@cs.unm.edu>  Wed, 18 Jul 2001 16:09:25 -0600
 
 buthead (1.0-1) unstable; urgency=low
 
