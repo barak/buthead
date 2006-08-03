@@ -2,16 +2,15 @@
 .SH NAME
 buthead \- copies all but the first few lines
 .SH SYNOPSIS
-.B buthead
-count
+.BI buthead \ count
 .SH EXAMPLE
 .B buthead
 5 <file-with-5-line-header >file-without-header
 .SH DESCRIPTION
-.I Buthead
+.B Buthead
 copies all but the first
 .I count
-lines of its standard input to its standard output.
+lines of stdin to stdout.
 .SH DIAGNOSTICS
 Terminates gracefully if EOF encountered within first
 .I count
@@ -20,6 +19,8 @@ lines.
 Written by Barak A. Pearlmutter on April 1.
 .SH BUGS
 Functionality overlaps with
-.I tail +count
+.BI tail\ -n\ + count
+or
+.BI awk\ '(NR> count )'
 .SH SEE\ ALSO
 head(1), tail(1)
