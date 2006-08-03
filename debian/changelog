@@ -1,6 +1,7 @@
 buthead (1.0-7) unstable; urgency=low
 
   * shorten and obfuscate man page
+  * policy rev
 
  -- Barak A. Pearlmutter <bap@debian.org>  Thu,  3 Aug 2006 01:16:18 +0100
 

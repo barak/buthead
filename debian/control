@@ -2,8 +2,8 @@ Source: buthead
 Section: text
 Priority: extra
 Maintainer: Barak Pearlmutter <bap@debian.org>
-Standards-Version: 3.6.1
-Build-depends: debhelper
+Standards-Version: 3.7.2
+Build-depends: debhelper (>= 5)
 
 Package: buthead
 Architecture: any
