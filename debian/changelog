@@ -1,3 +1,9 @@
+buthead (1.0-8) unstable; urgency=low
+
+  * in debian/rules add dh_strip and remove explicit stripping (closes: #436608)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 10 Aug 2007 09:33:27 +0100
+
 buthead (1.0-7) unstable; urgency=low
 
   * shorten and obfuscate man page
