@@ -3,9 +3,13 @@
 buthead \- copies all but the first few lines
 .SH SYNOPSIS
 .BI buthead \ count
-.SH EXAMPLE
+.SH EXAMPLES
 .B buthead
 5 <file-with-5-line-header >file-without-header
+.br
+seq 5 |
+.B buthead
+3
 .SH DESCRIPTION
 .B Buthead
 copies all but the first
