@@ -1,6 +1,12 @@
+buthead (1.0-9) unstable; urgency=low
+
+  * rev deb standard
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Sun, 23 Dec 2007 17:26:18 +0100
+
 buthead (1.0-8) unstable; urgency=low
 
-  * in debian/rules add dh_strip and remove explicit stripping (closes: #436608)
+  * add dh_strip to debian/rules (closes: #436608)
 
  -- Barak A. Pearlmutter <bap@debian.org>  Fri, 10 Aug 2007 09:33:27 +0100
 
