@@ -2,14 +2,11 @@ Source: buthead
 Section: text
 Priority: extra
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Standards-Version: 3.7.3
-Build-depends: debhelper (>= 5)
+Standards-Version: 3.8.0
+Build-depends: debhelper (>= 7)
 
 Package: buthead
 Architecture: any
 Depends: ${shlibs:Depends}
 Description: copy all but the first few lines
- Program to copy all but
- the first N lines
- of standard input
- to standard output.
+ Program to copy all but the first N lines of stdin to stdout.

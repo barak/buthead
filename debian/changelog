@@ -1,6 +1,12 @@
+buthead (1.0-10) unstable; urgency=low
+
+  * rev deb std, dh 7
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 27 Aug 2008 12:54:39 +0200
+
 buthead (1.0-9) unstable; urgency=low
 
-  * rev deb standard
+  * rev deb standard, rephrase description
 
  -- Barak A. Pearlmutter <bap@debian.org>  Sun, 23 Dec 2007 17:26:18 +0100
 

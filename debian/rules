@@ -1,44 +1,8 @@
 #!/usr/bin/make -f
-# Based on sample debian/rules that uses debhelper.
-# GNU copyright 1997 to 1999 by Joey Hess.
+build clean:
+	dh $@
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-
-build: build-stamp
-build-stamp:
-	dh_testdir
-	$(MAKE)
-	touch build-stamp
-
-clean:
-	dh_testdir
-	rm -f build-stamp
-	$(MAKE) clean
-	dh_clean
-
-install: build
-	dh_testdir
-	dh_clean -k
-	dh_installdirs
-	$(MAKE) install DESTDIR=`pwd`/debian/buthead prefix=/usr
-
-binary-indep: build install
-
-binary-arch: build install
-	dh_testdir
-	dh_testroot
-	dh_installdocs
-	dh_installmanpages
-	dh_installchangelogs
-	dh_strip
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install
+install binary-arch binary-indep binary:
+	dh $@ --before auto_install
+	dh_auto_install -- prefix=/usr
+	dh $@ --remaining
