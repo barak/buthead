@@ -4,6 +4,8 @@ Priority: extra
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Standards-Version: 3.8.0
 Build-depends: debhelper (>= 7)
+Vcs-Git: git://git.debian.org/git/collab-maint/buthead.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/buthead.git
 
 Package: buthead
 Architecture: any
