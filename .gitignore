@@ -1,0 +1,5 @@
+/buthead
+/debian/*.log
+/debian/*.substvars
+/debian/buthead
+/debian/files
