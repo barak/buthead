@@ -1,8 +1,10 @@
 buthead (1.0-13) unstable; urgency=low
 
   * Note in man page that sed 1,5d can substitute for buthead 5
+  * Create alias bh for buthead, to beat "buthead 5" = "sed 1,5d", see
+    http://upsilon.cc/~zack/blog/posts/2009/05/command_of_the_day:_buthead/
 
- -- Barak A. Pearlmutter <bap@debian.org>  Fri, 29 May 2009 08:08:24 +0100
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 29 May 2009 08:08:42 +0100
 
 buthead (1.0-12) unstable; urgency=low
 
