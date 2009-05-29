@@ -4,3 +4,7 @@
 
 override_dh_auto_install:
 	dh_auto_install -- prefix=/usr
+	mkdir -p debian/buthead/usr/bin
+	ln -s buthead debian/buthead/usr/bin/bh
+	mkdir -p debian/buthead/usr/share/man/man1
+	ln -s buthead.1.gz debian/buthead/usr/share/man/man1/bh.1.gz
