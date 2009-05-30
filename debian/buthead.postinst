@@ -1,0 +1,14 @@
+#! /bin/sh
+
+case "$1" in
+    configure)
+        # Alternatives
+        update-alternatives --quiet \
+            --install /usr/bin/bh bh /usr/bin/buthead 30 \
+            --slave \
+            /usr/share/man/man1/bh.1.gz bh.1.gz \
+            /usr/share/man/man1/buthead.1.gz
+        ;;
+esac
+
+#DEBHELPER#
