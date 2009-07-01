@@ -7,7 +7,7 @@ buthead \- copies all but the first few lines
 .BI bh \ count
 .SH EXAMPLES
 .B buthead
-5 <file-with-5-line-header >file-without-header
+5 <file\-with\-5\-line\-header >file\-without\-header
 .br
 seq 5 |
 .B buthead
@@ -25,7 +25,7 @@ lines.
 Written by Barak A. Pearlmutter on April 1.
 .SH BUGS
 Functionality overlaps with
-.BI tail\ -n\ + count
+.BI tail\ \-n\ + count
 or
 .BI awk\ '(NR> count )'
 or
