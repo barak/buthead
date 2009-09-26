@@ -1,8 +1,9 @@
 buthead (1.0-15) unstable; urgency=low
 
   * distinguish unicode hyphen from ascii dash in man page
+  * cease ignoring errors in installation scripts
 
- -- Barak A. Pearlmutter <bap@debian.org>  Wed, 01 Jul 2009 14:26:47 +0200
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 25 Sep 2009 22:24:59 -0400
 
 buthead (1.0-14) unstable; urgency=low
 
