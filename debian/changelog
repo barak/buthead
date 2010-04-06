@@ -1,7 +1,7 @@
 buthead (1.0-16) unstable; urgency=low
 
   * bump debian standards
-  * switch to dpkg-source 3.0 (git) format
+  * switch to dpkg-source 3.0 (quilt) format
 
  -- Barak A. Pearlmutter <bap@debian.org>  Thu, 25 Mar 2010 15:40:27 +0000
 
