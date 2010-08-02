@@ -1,3 +1,9 @@
+buthead (1.0-17) UNRELEASED; urgency=low
+
+  * bump standards version (debian/control)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 02 Aug 2010 14:30:11 +0200
+
 buthead (1.0-16) unstable; urgency=low
 
   * bump debian standards
