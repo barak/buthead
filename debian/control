@@ -3,7 +3,7 @@ Section: text
 Priority: extra
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Standards-Version: 3.9.1
-Build-depends: debhelper (>= 7.2.5)
+Build-depends: debhelper (>= 8)
 Vcs-Git: git://git.debian.org/git/collab-maint/buthead.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/buthead.git
 
