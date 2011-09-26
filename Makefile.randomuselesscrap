@@ -1,0 +1,22 @@
+# -*- Makefile -*-
+progs=buthead
+clean:
+	-rm -f $(progs)
+
+prefix=/usr/local
+exec_prefix=$(prefix)
+bindir=$(exec_prefix)/bin
+
+INSTALL = install
+INSTALL_PROGRAM = $(INSTALL) --mode a+rx,ug+w
+INSTALL_DIR = mkdir --parent
+
+install:: $(progs)
+	$(INSTALL_DIR) $(DESTDIR)$(bindir)
+	$(INSTALL_PROGRAM) $(progs) $(DESTDIR)$(bindir)
+
+uninstall::
+	-cd $(DESTDIR)$(bindir) && rm -f $(progs)
+
+install-strip:
+	$(MAKE) INSTALL_PROGRAM='$(INSTALL_PROGRAM) --strip' install

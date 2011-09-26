@@ -1,48 +1,46 @@
-/* Chop off the first n lines.
+// buthead: pass through all but first n lines of standard input
 
- * History:
+// Copyright 2002, Barak A. Pearlmutter <bap@debian.org>
 
- * April 24, 1988
- * Created, Barak Pearlmutter.
-
- */
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
 
-#define BUFFSIZE 1024
-
-main(argc,argv)
-     int argc;
-     char **argv;
+int main(int argc, char **argv)
 {
-  int lines_to_skip, c, i;
-  char buff[BUFFSIZE];
+  long lines_to_skip, i;
+  int c;
+  char *p;
 
-  if (argc != 2)
-    {
-      fprintf(stderr, "Usage: %s count.\n", argv[0]);
-      exit(2);
+  if (argc != 2) {
+    fprintf(stderr, "Usage: %s count\n", argv[0]);
+    exit(2);
+  }
+
+  lines_to_skip = strtol(argv[1], &p, 10);
+
+  if (errno || lines_to_skip < 0 || argv[1][0] == '\0' || *p != '\0') {
+    fprintf(stderr, "buthead error: invalid line count '%s'\n", argv[1]);
+    exit(2);
+  }
+
+  for (i=0; i<lines_to_skip; ) {
+    if ((c = getc(stdin)) == EOF) {
+      fprintf(stderr, "buthead error: EOF on line %ld while skipping %ld\n",
+	      i+1, lines_to_skip);
+      exit(1);
     }
 
-  if (sscanf(argv[1], "%d", &lines_to_skip) != 1 || lines_to_skip < 0)
-    {
-      fprintf(stderr, "Unable to parse line count %s.\n", argv[1]);
-      exit(2);
-    }
+    if (c == '\n') i += 1;
+  }
 
-  for (i=0; i<lines_to_skip; )
-    {
-      if ((c = getc(stdin)) == EOF)
-	{
-	  fprintf(stderr, "Premature EOF.\n");
-	  exit(1);
-	}
-      else if (c == '\n') i += 1;
-      else continue;
-    }
+  while ((c = getchar()) != EOF)
+    putchar(c);
 
-  while ((i = fread(buff, 1, BUFFSIZE, stdin)) != 0)
-    fwrite(buff, 1, i, stdout);
-
-  exit(0);
+  return 0;
 }

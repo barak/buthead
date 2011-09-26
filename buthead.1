@@ -1,28 +1,34 @@
-.TH BUTHEAD 1 "April 1988"
-.UC
+.TH BUTHEAD "1" "April 1" "buthead (latzutils)" "User Commands"
 .SH NAME
-buthead \- give all but the first few lines
+buthead \- copies all but the first few lines
 .SH SYNOPSIS
+.BI buthead \ count
+.br
+.BI bh \ count
+.SH EXAMPLES
 .B buthead
-count
-.SH EXAMPLE
+5 <file\-with\-5\-line\-header >file\-without\-header
+.br
+seq 5 |
 .B buthead
-5 <file-with-5line-header >file-without-header
+3
 .SH DESCRIPTION
-.I Buthead
-copies all but the the first
+.B Buthead
+copies all but the first
 .I count
-lines of the standard input to the standard output.
+lines of stdin to stdout.
 .SH DIAGNOSTICS
-.I Buthead
-terminates gracefully if EOF is encountered within the first
+Terminates gracefully if EOF encountered within first
 .I count
 lines.
 .SH AUTHOR
-Written by Barak Pearlmutter at Carnegie-Mellon University in April 1988.
+Written by Barak A. Pearlmutter on April 1.
 .SH BUGS
-The
-.I buttail
-program still needs to be writen.
+Functionality overlaps with
+.BI tail\ \-n\ + count
+or
+.BI awk\ '(NR> count )'
+or
+.BI sed\ 1, count d
 .SH SEE\ ALSO
-head(1), tail(1)
+head(1), tail(1), sed(1)
