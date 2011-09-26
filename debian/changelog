@@ -1,10 +1,11 @@
-buthead (1.0-17) UNRELEASED; urgency=low
+buthead (1.1-1) unstable; urgency=low
 
   * bump standards version (debian/control)
   * dh 8
   * dh --parallel
+  * debian patches accepted upstream (closes: #643062)
 
- -- Barak A. Pearlmutter <bap@debian.org>  Sat, 04 Dec 2010 23:28:32 +0000
+ -- Barak A. Pearlmutter <bap@debian.org>  Mon, 26 Sep 2011 22:32:36 +0100
 
 buthead (1.0-16) unstable; urgency=low
 
