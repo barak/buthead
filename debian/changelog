@@ -1,3 +1,10 @@
+buthead (1.1-2) unstable; urgency=low
+
+  * bump standards version (debian/control)
+  * dh 9
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 11 Apr 2012 22:28:03 +0100
+
 buthead (1.1-1) unstable; urgency=low
 
   * bump standards version (debian/control)
