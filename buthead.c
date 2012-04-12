@@ -40,7 +40,15 @@ int main(int argc, char **argv)
   }
 
   while ((c = getchar()) != EOF)
-    putchar(c);
+    if (putchar(c) == EOF) {
+      perror("buthead error");
+      exit(1);
+    }
+
+  if (fflush(stdout) == EOF) {
+    perror("buthead error");
+    exit(1);
+  }
 
   return 0;
 }
