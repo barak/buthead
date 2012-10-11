@@ -1,3 +1,9 @@
+buthead (1.1-3) unstable; urgency=low
+
+  * add sources url to debian/copyright (closes: #690025)
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 11 Oct 2012 12:54:10 +0100
+
 buthead (1.1-2) unstable; urgency=low
 
   * bump standards version (debian/control)
