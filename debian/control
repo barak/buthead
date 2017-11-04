@@ -1,9 +1,9 @@
 Source: buthead
 Section: text
-Priority: extra
+Priority: optional
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Standards-Version: 3.9.5
-Build-depends: debhelper (>= 9)
+Standards-Version: 4.1.1
+Build-depends: debhelper (>= 10)
 Vcs-Git: git://anonscm.debian.org/collab-maint/buthead.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/buthead.git
 
