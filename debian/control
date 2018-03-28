@@ -5,8 +5,8 @@ Maintainer: Barak A. Pearlmutter <bap@debian.org>
 Standards-Version: 4.1.1
 Build-depends: debhelper (>= 10)
 Rules-Requires-Root: no
-Vcs-Git: git://anonscm.debian.org/collab-maint/buthead.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/buthead.git
+Vcs-Git: https://salsa.debian.org/debian/buthead.git
+Vcs-Browser: https://salsa.debian.org/debian/buthead
 
 Package: buthead
 Architecture: any
