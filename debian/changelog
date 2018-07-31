@@ -1,3 +1,14 @@
+buthead (1.1-5) unstable; urgency=medium
+
+  * bump standards version
+  * bump debhelper version
+  * use secure URLs
+  * swizzle packaging repo to salsa
+  * priority optional, per standards
+  * harden
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 31 Jul 2018 11:21:39 +0200
+
 buthead (1.1-4) unstable; urgency=medium
 
   * canonicalize debian collab-maint git repo urls
