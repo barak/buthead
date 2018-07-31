@@ -6,5 +6,5 @@ Upstream Author: ibid, id est, Copyright 2002 Barak A. Pearlmutter
 Copyright: GNU GPL v2 or later, see /usr/share/common-licenses/GPL-2
 
 Sources at
- git://git.debian.org/git/collab-maint/buthead.git
- git://github.com/barak/buthead.git
+ https://salsa.debian.org/debian/buthead.git
+ https://github.com/barak/buthead
