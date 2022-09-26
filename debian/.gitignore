@@ -1,0 +1,6 @@
+/*.log
+/*.substvars
+/.debhelper/
+/buthead
+/debhelper-build-stamp
+/files
