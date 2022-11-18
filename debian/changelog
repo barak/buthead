@@ -1,3 +1,9 @@
+buthead (1.1-7) unstable; urgency=medium
+
+  * use dh_installalternatives
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Fri, 18 Nov 2022 14:36:28 +0000
+
 buthead (1.1-6) unstable; urgency=medium
 
   * bump debhelper from old 11 to 13.

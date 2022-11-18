@@ -1,0 +1,6 @@
+Name: bh
+Link: /usr/bin/bh
+Alternative: /usr/bin/buthead
+Dependents:
+  /usr/share/man/man1/bh.1.gz bh.1.gz /usr/share/man/man1/buthead.1.gz
+Priority: 30
